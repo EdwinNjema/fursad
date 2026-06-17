@@ -1,0 +1,1 @@
+CREATE POLICY "anyone can upload media" ON storage.objects FOR INSERT TO anon, authenticated WITH CHECK (bucket_id = 'media');
